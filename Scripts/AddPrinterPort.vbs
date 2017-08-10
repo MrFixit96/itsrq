@@ -1,9 +1,0 @@
-Set objWMIService = GetObject("winmgmts:")
-Set objNewPort = objWMIService.Get _
-    ("Win32_TCPIPPrinterPort").SpawnInstance_
-objNewPort.Name = "IP_169.254.110.14"
-objNewPort.Protocol = 1
-objNewPort.HostAddress = "169.254.110.14"
-objNewPort.PortNumber = "9999"
-objNewPort.SNMPEnabled = False
-objNewPort.Put_
