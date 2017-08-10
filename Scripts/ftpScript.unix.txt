@@ -1,0 +1,8 @@
+#!/bin/bash
+ ...
+ftp $ftpto <<END_FTP_CMDS >$logfile 2>&1
+ascii
+verbose
+put $xfrfile
+dir $xfrfile
+END_FTP_CMDS

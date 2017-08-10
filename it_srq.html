@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <title>IT Services&#39;s Request System</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet1.css" />
+</html>
+  <div id="logo">
+IT Services&#39;s Request System  </div>
+
+<br />
+Host information: localhost via TCP/IP
+
+<br />
+  <div id="menu">
+<a class="menuitem" href="it_srq.php?action=View" >View Service Requests</a>&nbsp<a class="menuitem" href="../../index.php?section=51" >Back To IT Services&#39;s Request System Home</a>  </div>
+  <hr  />
+  <form action="it_srq.php" enctype="multipart/form-data" method="POST">
+  <b >Enter Your Information:  </b><p>
+<LABEL>Name: 
+<input type="text" name="name" size="50" maxlength="50" tabindex="1" />
+</LABEL>
+
+<br />
+
+<LABEL>Email: 
+<input type="text" name="email" size="50" maxlength="50" tabindex="2" />
+</LABEL>
+
+<br />
+
+<LABEL>Asset/Barcode Number: 
+<input type="text" name="assetNumber" size="9" maxlength="10" value="99999" tabindex="3" /> 
+</LABEL>
+
+<br />
+
+<LABEL>Time Submitted(In yyyy-mm-dd format): 
+<input type="text" name="timeStart" size="20" maxlength="20" value="yyyy-mm-dd" tabindex="4" /> 
+</LABEL>
+
+<br />
+
+<LABLE>Windows Version: 
+<select name="OS" tabindex="5">
+<option value="---SELECT ONE---">---SELECT ONE---</option>
+<option value="Windows XP">Windows XP</option>
+<option value="Windows 2000">Windows 2000</option>
+<option value="Windows 98">Windows 98</option>
+</select>
+</LABEL>
+<br />
+
+<LABEL>Error Type: 
+<select name="errorType" tabindex="6">
+<option value="---SELECT ONE---">---SELECT ONE---</option>
+<option value="Network Outage">Network Outage</option>
+<option value="Blocked Website">Blocked Website</option>
+<option value="PC Problem/Question">PC Problem/Question</option>
+<option value="Equipment Repair/Replace">Equipment Repair/Replace</option>
+<option value="Other">Other</option>
+</select>
+</LABEL>
+
+<br />
+
+<LABEL>Description: 
+<textarea name="description" rows="5" cols="50" tabindex="7" /> </textarea>
+</LABEL>
+
+<br />
+
+<LABEL>Priority Level: 
+<select name="priorityLevel" tabindex="8">
+<option value="---SELECT ONE---">---SELECT ONE---</option>
+<option value="High (Requires immediate attention)">High (Requires immediate attention)</option>
+<option value="Medium (Needs attention soon)">Medium (Needs attention soon)</option>
+<option value="Normal (Fix as Schedule Permits)">Normal (Fix as Schedule Permits)</option>
+</select>
+</LABEL>
+
+<br />
+</p>
+  <input name="action" type="submit" value="Submit">
+  </input>
+  <input name=".reset" type="reset" value="Reset">
+  </input>
+</form>
